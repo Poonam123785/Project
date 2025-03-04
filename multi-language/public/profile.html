@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Language Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <label for="languageSelector">Choose language:</label>
+        <select id="languageSelector">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="hi">Hindi</option>
+            <option value="pt">Portuguese</option>
+            <option value="zh">Chinese</option>
+            <option value="fr">French</option>
+        </select>
+        <h1 data-i18n="title">Default Title</h1>
+        <p data-i18n="description">Default Description</p>
+        <button id="testButton" data-i18n="button">Test Button</button>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/20.3.5/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.1/i18nextBrowserLanguageDetector.min.js"></script>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
